@@ -1,5 +1,5 @@
 <template>
-  <header class="bg-gray-100 shadow-lg">
+  <header class="bg-gray-100 shadow-lg flex justify-between">
     <div class="flex items-center justify-between p-4 text-gray-500">
       <div class="flex items-center">
         <svg
@@ -20,7 +20,7 @@
         </svg>
         <span class="mx-2">ESA</span>
       </div>
-      <div>
+      <div class="sm:hidden">
         <button
           @click="isOpen = !isOpen"
           type="button"
@@ -40,7 +40,6 @@
             viewBox="0 0 448 512"
           >
             <path
-              v-if="!isOpen"
               fill="currentColor"
               d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
             ></path>
@@ -48,15 +47,13 @@
         </button>
       </div>
     </div>
-    <div
-      :class="isOpen ? 'block' : 'hidden'"
-      class="px-2 pb-4 flex flex-col justify-end"
-    >
+    <div :class="isOpen ? 'block' : 'hidden'" class="px-2 pb-4 sm:block">
       <NuxtLink
         v-for="navLink in navLinks"
         :key="navLink.id"
         class="
-          block
+          flex flex-col
+          sm:flex-row
           px-2
           font-semibold
           text-gray-500
