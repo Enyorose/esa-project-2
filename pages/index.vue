@@ -12,11 +12,12 @@
       "
     >
       <TheNavBar class="sticky top-0 z-50" />
-      <h1
-        class="font-header text-xl md:text-3xl lg:text-5xl xl:text-7xl my-auto"
-      >
-        Help us shape the future
-      </h1>
+      <section class="my-auto">
+        <h1 class="font-body text-xl md:text-3xl lg:text-5xl xl:text-7xls">
+          Help us shape the future
+        </h1>
+        <CtaButton />
+      </section>
     </header>
     <div class="h-4/5"></div>
   </div>

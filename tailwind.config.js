@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'header': ['Strait']
+        body: ['Strait']
       },
       height: {
         "10v": "10vh",
