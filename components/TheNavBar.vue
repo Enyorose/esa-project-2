@@ -1,5 +1,11 @@
 <template>
-  <header class="bg-gray-100 shadow-lg flex justify-between">
+  <header
+    class="
+      bg-gray-100
+      shadow-lg
+      sm:flex sm:justify-start sm:px-4 sm:py-3 sm:items-center
+    "
+  >
     <div class="flex items-center justify-between p-4 text-gray-500">
       <div class="flex items-center">
         <svg
@@ -47,13 +53,12 @@
         </button>
       </div>
     </div>
-    <div :class="isOpen ? 'block' : 'hidden'" class="px-2 pb-4 sm:block">
+    <div :class="isOpen ? 'block' : 'hidden'" class="px-2 pb-4 sm:pb-0 sm:flex">
       <NuxtLink
         v-for="navLink in navLinks"
         :key="navLink.id"
         class="
-          flex flex-col
-          sm:flex-row
+          block
           px-2
           font-semibold
           text-gray-500
