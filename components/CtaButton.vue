@@ -6,9 +6,10 @@
       text-white
       font-bold
       py-2
-      px-4
-      rounded
+      px-3
+      rounded-3xl
       w-max
+      mt-3
     "
   >
     Sponsor
