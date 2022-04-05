@@ -3,6 +3,10 @@ module.exports = {
   presets: [],
   darkMode: 'media', // or 'class'
   theme: {
+    // todo: try to fix colors so I can pull in custom color 
+    colors: {
+      olive: '#a9c995',
+    },
     extend: {
       fontFamily: {
         body: ['Strait']
@@ -18,6 +22,18 @@ module.exports = {
         "80v": "80vh",
         "90v": "90vh",
         "100v": "100vh",
+      },
+      width: {
+        "10v": "10vw",
+        "20v": "20vw",
+        "30v": "30vw",
+        "40v": "40vw",
+        "50v": "50vw",
+        "60v": "60vw",
+        "70v": "70vw",
+        "80v": "80vw",
+        "90v": "90vw",
+        "100v": "100vw",
       },
     },
     screens: {
@@ -55,6 +71,7 @@ module.exports = {
       fuchsia: colors.fuchsia,
       pink: colors.pink,
       rose: colors.rose,
+      olive: colors.olive
     }),
     columns: {
       auto: 'auto',

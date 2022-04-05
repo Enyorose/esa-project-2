@@ -4,7 +4,8 @@
       class="
         w-full
         h-full
-        bg-no-repeat bg-cover bg-right-bottom bg-fixed
+        bg-no-repeat bg-cover bg-right-bottom
+        sm:bg-fixed
         flex flex-col
       "
       style="
@@ -19,6 +20,8 @@
         <CtaButton />
       </section>
     </header>
-    <div class="h-4/5"></div>
+    <div class="sm:h-4/5">
+      <CompanyBanner />
+    </div>
   </div>
 </template> 
