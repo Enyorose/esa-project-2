@@ -13,10 +13,7 @@
       "
     >
       <TheNavBar class="sticky top-0 z-50" />
-      <section class="my-auto ml-3">
-        <h1 class="font-body text-xl md:text-3xl lg:text-5xl xl:text-7xls">
-          Help us shape the future
-        </h1>
+      <section class="my-auto ml-8">
         <CtaButton />
       </section>
     </header>

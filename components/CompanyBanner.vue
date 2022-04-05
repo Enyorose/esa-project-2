@@ -1,9 +1,11 @@
 <template>
-  <div class="sm:w-90v mx-auto p-8 bg-gray-100 shadow-lg opacity-70">
-    <h2 class="text-xl mb-5 text-center">Our Gold Sponsors</h2>
+  <div class="sm:w-90v mx-auto p-6 md:p-8 bg-gray-100 shadow-lg opacity-70">
+    <h2 class="text-md md:text-base lg:text-2xl mb-5 text-center">
+      Our Gold Sponsors
+    </h2>
     <div class="flex flex-wrap justify-between">
       <article v-for="link in links" :key="link.id">
-        <img class="h-20" :src="link.path" />
+        <img class="h-10 md:h-16 lg:h-20" :src="link.path" />
       </article>
     </div>
   </div>
