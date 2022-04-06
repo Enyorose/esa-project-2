@@ -19,15 +19,20 @@
     <div>
       <CompanyBanner />
       <TextBox :info="textInfo" />
+      <CardBox :box="cardBox" />
     </div>
   </div>
 </template> 
 
 <script setup>
+import CardBox from "~~/components/CardBox.vue";
 const textInfo = {
   title: "Welcome!",
   text: "First a big thank you to our generous sponsors without you so many of our students would not have attended seminars and social events.  Allowing them to grow their experiences and networks providing them with so many strengths they can put towards their future.",
   img: "/assets/images/group-of-people.jpg",
   alt: "A group of people by brown trees",
+};
+const cardBox = {
+  title: "Student Reviews",
 };
 </script>
