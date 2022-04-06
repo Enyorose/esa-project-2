@@ -5,7 +5,7 @@
     </h2>
     <div class="flex flex-wrap justify-between">
       <article v-for="link in links" :key="link.id">
-        <img class="h-10 md:h-16 lg:h-20" :src="link.path" />
+        <img class="h-10 md:h-12 lg:h-16" :src="link.path" />
       </article>
     </div>
   </div>
@@ -14,23 +14,23 @@
 <script setup>
 const links = [
   {
-    path: "../assets/images/allnorth.jpg",
+    path: "/assets/images/allnorth.jpg",
     alt: "This is a photo of the allnorth photo.",
   },
   {
-    path: "../assets/images/dwb.jpg",
+    path: "/assets/images/dwb.jpg",
     alt: "This is a photo of the dwb photo.",
   },
   {
-    path: "../assets/images/gairns.png",
+    path: "/assets/images/gairns.png",
     alt: "This is a photo of the dwb photo.",
   },
   {
-    path: "../assets/images/mcelhanney.png",
+    path: "/assets/images/mcelhanney.png",
     alt: "This is a photo of the mcelhanney photo.",
   },
   {
-    path: "../assets/images/unbc.jpeg",
+    path: "/assets/images/unbc.jpeg",
     alt: "This is a photo of the unbc photo.",
   },
 ];

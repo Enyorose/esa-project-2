@@ -1,5 +1,6 @@
 <template>
   <div class="h-50v md:h-70v lg:h-90v">
+    <!-- move this into the nav? or make a hero component -->
     <header
       class="
         w-full
@@ -13,12 +14,20 @@
       "
     >
       <TheNavBar class="sticky top-0 z-50" />
-      <section class="my-auto ml-8">
-        <CtaButton />
-      </section>
+      <CtaButton />
     </header>
-    <div class="sm:h-4/5">
+    <div>
       <CompanyBanner />
+      <TextBox :info="textInfo" />
     </div>
   </div>
 </template> 
+
+<script setup>
+const textInfo = {
+  title: "Welcome!",
+  text: "First a big thank you to our generous sponsors without you so many of our students would not have attended seminars and social events.  Allowing them to grow their experiences and networks providing them with so many strengths they can put towards their future.",
+  img: "/assets/images/group-of-people.jpg",
+  alt: "A group of people by brown trees",
+};
+</script>
